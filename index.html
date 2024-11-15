@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trafalgar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="src/assets/styles/style.css">
+    <title>Trafalgar</title>
 </head>
 
 <body>
@@ -148,38 +149,94 @@
 
 
     <section class="sessao-comentarios"> <!-- Sessão de Comentários dos Usuarios -->
-        <div class="card-comentario">
-            <h2>What our customer are saying</h2>
-            <hr>
 
-            <div class="comentario">
-                <div class="comentarista-info">
-                    <img src="src/assets/images/foto-homem-comentario.svg" alt="foto do comentarista">
-                    <div>
-                        <h3>Edward Newgate</h3>
-                        <p><span>Founder Circle</span></p>
+        <div class="comentarios-container">
+            <div class="comentarios-topo">
+                <h2>What our customer are saying</h2>
+                <hr>
+            </div>    
+    
+            <!-- Swipper Container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card-conteudo">
+                            <div class="usuario-info">
+                                <img src="src/assets/images/foto-homem-comentario.svg" alt="foto do comentarista">
+                                <div class="usuario-nome-funcao">
+                                    <h3>Edward Newgate</h3>
+                                    <p><span>Founder Circle</span></p>
+                                </div>
+                            </div>
+            
+                            <p class="comentario-texto">“Our dedicated patient engagement app and<br>web portal allow you to access
+                                information<br>instantaneously (no tedeous form, long calls,<br>or administrative hassle) and
+                                securely”</p>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card-conteudo">
+                            <div class="usuario-info">
+                                <img src="src/assets/images/foto-homem-comentario.svg" alt="foto do comentarista">
+                                <div class="usuario-nome-funcao">
+                                    <h3>Edward Newgate</h3>
+                                    <p><span>Founder Circle</span></p>
+                                </div>
+                            </div>
+            
+                            <p class="comentario-texto">“Our dedicated patient engagement app and<br>web portal allow you to access
+                                information<br>instantaneously (no tedeous form, long calls,<br>or administrative hassle) and
+                                securely”</p>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card-conteudo">
+                            <div class="usuario-info">
+                                <img src="src/assets/images/foto-homem-comentario.svg" alt="foto do comentarista">
+                                <div class="usuario-nome-funcao">
+                                    <h3>Edward Newgate</h3>
+                                    <p><span>Founder Circle</span></p>
+                                </div>
+                            </div>
+            
+                            <p class="comentario-texto">“Our dedicated patient engagement app and<br>web portal allow you to access
+                                information<br>instantaneously (no tedeous form, long calls,<br>or administrative hassle) and
+                                securely”</p>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card-conteudo">
+                            <div class="usuario-info">
+                                <img src="src/assets/images/foto-homem-comentario.svg" alt="foto do comentarista">
+                                <div class="usuario-nome-funcao">
+                                    <h3>Edward Newgate</h3>
+                                    <p><span>Founder Circle</span></p>
+                                </div>
+                            </div>
+            
+                            <p class="comentario-texto">“Our dedicated patient engagement app and<br>web portal allow you to access
+                                information<br>instantaneously (no tedeous form, long calls,<br>or administrative hassle) and
+                                securely”</p>
+                        </div>
                     </div>
                 </div>
-
-                <p>“Our dedicated patient engagement app and<br>web portal allow you to access
-                    information<br>instantaneously (no tedeous form, long calls,<br>or administrative hassle) and
-                    securely”</p>
-
+    
             </div>
 
         </div>
-
-        <div class="botoes-comentario">
-            <img src="src/assets/images/icons/seta-para-esquerda.svg" alt="seta para a esquerda">
-
-            <img src="src/assets/images/icons/icone-slide-selecao.svg" alt="">
-
-            <img src="src/assets/images/icons/seta-para-direita.svg" alt="seta para a direita">
-
+        <!-- Navegação do Swiper -->
+        <div class="swipper-controls">
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-pagination"></div>
+             <div class="swiper-button-next"></div>
         </div>
 
     </section>
-
+    
 
     <section class="sessao-artigos"> <!-- Sessão Falando Sobre Artigos com 3 Cards -->
         <h2>Check out our latest article</h2>
@@ -295,6 +352,8 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/scripts/script.js"></script>
 </body>
 
 </html>

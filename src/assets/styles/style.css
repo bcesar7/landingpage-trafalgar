@@ -27,6 +27,10 @@ p {
     color: rgba(125, 121, 135, 1);
 }
 
+button {
+    cursor: pointer;
+}
+
 /* Topo da Página */
 header {
     width: 100%;
@@ -342,72 +346,99 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 
 .sessao-comentarios {  /* Toda a Sessão da Parte Comentários */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 502px;
     margin-top: 251px;
+    /* overflow: hidden; */
+    border: 2px solid white;
 }
 
-
-.card-comentario {  /* Parte do Card em Si e das Informações Dentro Dele */
-    width: 1120px;
+.comentarios-container {  /* Espaço em Azul dos Comentarios */
+    /* width: 1120px;*/
     height: 425px;
-    text-align: center;
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
+    overflow: hidden;
 }
 
-.card-comentario h2 {
+.comentarios-topo {  /* Topo / Header do Container do comentario */
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 66px;
+}
+
+.comentarios-topo h2 {
     font-size: 36px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    margin-top: 64px;
+    color: rgba(255, 255, 255, 1)
 }
 
-.card-comentario hr {
+.comentarios-topo hr {
     width: 56px;
     margin-top: 25px;
-    margin-bottom: 66px;
     margin-left: 530px;
     margin-right: 530px;
     border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 6px;
 }
 
 
-.comentario {  /* Div da parte debaixo do card, englobando tudo: foto, nome, local e paragrafo(comentário) */
+/* Estilos do Swipper */
+
+.swiper-container {
+    width: 100%;
+    max-width: 1120px;
+    height: auto;
+}
+
+.swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 110px;
 }
 
 
-.comentarista-info {  /* Div somente do comentarista, pegando a parte da foto, nome e local */
+.card-conteudo {  /* Div da parte debaixo do card, englobando tudo: foto, nome, local e paragrafo(comentário) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 114px;
+}
+
+
+.usuario-info {  /* Div somente do comentarista, pegando a parte da foto, nome e local */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.comentarista-info img {
+.usuario-info img {
     width: 141px;
     height: 141px;
     margin-right: 29px;
 }
 
-.comentarista-info h3 {
+.usuario-nome-funcao {  /* Estilos do Nome e Função do Usuario */
+    text-align: start;
+    line-height: 2;
+}
+
+.usuario-nome-funcao h3 {
     font-size: 22px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1)
 }
 
-.comentarista-info span {
+.usuario-nome-funcao span {
     font-size: 18px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.85);
 }
 
 
-.comentario p {  /* Paragrafo do comentário da pessoa / Faz parte da div "comentario" */
+.comentario-texto {  /* Paragrafo do comentário da pessoa */
     font-size: 19px;
     font-weight: 400;
     text-align: start;
@@ -416,10 +447,56 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 }
 
 
-.botoes-comentario{  /* Parte dos Botões de Setas e Slide de Seleção */
+/* Controles de navegação Swipper */
+
+.swipper-controls {
     display: flex;
-    gap: 90px;
+    justify-content: center;
+    align-items: center;
     margin-top: 42px;
+    position: relative;
+    gap: 90px;
+}
+
+/* Setas de Navegação */
+
+.sessao-comentarios .swiper-button-prev,
+.sessao-comentarios .swiper-button-next {
+    width: 28px;
+    height: 18px;
+    position: static;
+    background: none;
+}
+
+.sessao-comentarios .swiper-button-prev {
+    content: url('../images/icons/seta-para-esquerda.svg');
+}
+
+.sessao-comentarios .swiper-button-next {
+    content: url('../images/icons/seta-para-direita.svg');
+}
+
+/* Paginação */
+
+.sessao-comentarios .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(0px, -3px);
+    gap: 18px;
+}
+
+.sessao-comentarios .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5B9BF3;  /* Cor dos pontos da paginação */
+    opacity: 0.3;  /* Deixe os pontos sempre visíveis */
+}
+.sessao-comentarios .swiper-pagination-bullet-active {
+    background-color: #5B9BF3;  /* Cor do ponto ativo */
+    opacity: 1;
 }
 
 
