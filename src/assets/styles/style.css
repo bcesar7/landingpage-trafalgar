@@ -34,17 +34,19 @@ button {
 /* Topo da Página */
 header {
     width: 100%;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 56px;
-    padding: 0px 60px;
-    gap: 512px
+    margin: auto;
+    gap: 512px;
 }
 
 .logo-conteudo {  /* Toda a Parte da Ancora do que Engloba o Logo */
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 160px;
     gap: 12px;
 }
 
@@ -66,7 +68,10 @@ header {
 
 nav {  /* Menu de Navegação da Página */
     display: flex;
-    gap: 40px;
+    width: 100%;
+    max-width: 545px;
+    height: 23px;
+    gap: 39px;
 }
 
 nav a {  /* Links do Menu de Navegação */
@@ -93,6 +98,12 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1247px;
+    height: 100%;
+    max-height: 598px;
+    margin: auto;
+    margin-top: 47px;
 }
 
 .hero-info {  /* Toda a Div das Informações - Parte a Esquerda do Hero */
@@ -130,8 +141,10 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 }
 
 .ilustracao1 {  /* Imagem de Ilustração */
-    width: 693px;
-    height: 598px;
+    width: 100%;
+    max-width: 693px;
+    height: 100%;
+    max-height: 598px;
     margin-top: 80px;
     margin-right: 163px;
 }
@@ -144,6 +157,11 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1120px;
+    height: 100%;
+    max-height: 1131px;
+    margin: auto;
     margin-top: 192px;
 }
 
@@ -238,13 +256,20 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 137px;
+    width: 100%;
+    max-width: 1273px;
+    height: 100%;
+    max-height: 477px;
+    margin: auto;
     margin-top: 220px;
+    gap: 137px;
 }
 
 .prestadores-cuidados-com-saude img {
-    width: 650px;
-    height: 477px;
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+    max-height: 477px;
 }
 
 .prestadores-cuidados-com-saude h2 {
@@ -287,6 +312,11 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1156px;
+    height: 100%;
+    max-height: 434px;
+    margin: auto;
     margin-top: 229px;
     gap: 71px;
 }
@@ -313,8 +343,10 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 }
 
 .download-do-nosso-app img {
-    width: 665px;
-    height: 434px;
+    width: 100%;
+    max-width: 665px;
+    height: 100%;
+    max-height: 434px;
 }
 
 .download-do-nosso-app button {  /* Todo o Molde do Notão de Download */
@@ -349,14 +381,18 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 502px;
+    width: 100%;
+    max-width: 1120px;
+    height: 100%;
+    max-height: 487px;
+    margin: auto;   
     margin-top: 251px;
     /* overflow: hidden; */
     border: 2px solid white;
 }
 
 .comentarios-container {  /* Espaço em Azul dos Comentarios */
-    /* width: 1120px;*/
+    width: 100%;
     height: 425px;
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
@@ -415,8 +451,10 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 }
 
 .usuario-info img {
-    width: 141px;
-    height: 141px;
+    width: 100%;
+    max-width: 141px;
+    height: 100%;
+    max-height: 141px;
     margin-right: 29px;
 }
 
@@ -507,6 +545,11 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1120px;
+    height: 100%;
+    max-height: 804px;
+    margin: auto;
     margin-top: 216px;
 }
 
@@ -532,7 +575,8 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 
 
 .card-artigo {  /* Div dos cards (engloba todo o molde do card) */
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 512px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 1);
@@ -540,7 +584,7 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 }
 
 .card-artigo img {
-    width: 350px;
+    width: 100%;
     height: 240px;
 }
 
@@ -592,17 +636,26 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
 /* Footer */
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 432px;
+    margin: auto;
     margin-top: 129px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
 }
 
 .div-background {  /* Div que esta por dentro do footer. Pega toda a parte azul do footer e o que esta nela */
-    height: 432px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-
+    width: 100%;
+    max-width: 1192px;
+    height: 100%;
+    max-height: 214px;
+    margin: auto;
 }
 
 .div-footer-trafalgar {
