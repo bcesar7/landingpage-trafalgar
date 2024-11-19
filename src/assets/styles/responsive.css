@@ -3,15 +3,16 @@
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+
     /* Todo corpo da Página */
     body {
         width: 100%;
         height: 100%;
     }
-    
+
     /* Topo do Site */
     header {
-        gap: 100px;
+        gap: 130px;
     }
 
     .menu-desktop {
@@ -26,23 +27,22 @@
 
     .overlayMenu {
         display: block;
-    } 
-    
+    }
+
     .botao-abrir-menu {
         display: block;
     }
 
+    /* Botão Abrir Menu Mobile */
     .botao-abrir-menu i {
-        /* Botão Abrir Menu Mobile */
         display: block;
         font-size: 38px;
         margin: 0;
-        margin-right: 5px;
         color: rgba(35, 51, 72, 1);
     }
 
+    /* Estrutura do Menu Mobile */
     .menu-mobile {
-        /* Estrutura do Menu Mobile */
         display: block;
         width: 0%;
         height: 100%;
@@ -56,36 +56,36 @@
     }
 
     /* Ação do Javascript no Menu Mobile */
+    /* Classe (abrir-menu) Criada no Javascript para Abrir o Menu na Versão Mobile */
     .menu-mobile.abrir-menu {
-        /* Classe (abrir-menu) Criada no Javascript para Abrir o Menu na Versão Mobile */
         width: 60%;
     }
 
+    /* Adicionando e Habilitando o Efeito da Classe overlay-menu ao Abrir o Menu Mobile */
     .menu-mobile.abrir-menu~.overlayMenu {
-        /* Adicionando e Habilitando o Efeito da Classe overlay-menu ao Abrir o Menu Mobile */
         display: block;
     }
 
+    /* Estrutura do Botão Fechar Menu Mobile */
     .menu-mobile .botao-fechar-menu {
-        /* Estrutura do Botão Fechar Menu Mobile */
         margin-left: 15px;
         margin-top: 15px;
     }
 
+    /* Botão Fechar Menu Mobile */
     .menu-mobile .botao-fechar-menu i {
-        /* Botão Fechar Menu Mobile */
         font-size: 30px;
         color: white;
     }
 
+    /* Lista com as Opções do Menu Mobile */
     .menu-mobile>nav>li {
-        /* Lista com as Opções do Menu Mobile */
         text-align: right;
         list-style-type: none;
     }
 
+    /* Especificamente Configurações nas Opções/Links */
     .menu-mobile>nav>li>a {
-        /* Especificamente Configurações nas Opções/Links */
         font-size: 20px;
         color: #F8F8F8;
         padding: 15px 20px;
@@ -97,8 +97,8 @@
         color: rgb(44, 65, 94);
     }
 
+    /* Efeito para Escurecer a Tela ao Abrir o Menu Mobile */
     .overlayMenu {
-        /* Efeito para Escurecer a Tela ao Abrir o Menu Mobile */
         background-color: rgba(59, 119, 197, 0.4);
         width: 100%;
         height: 100%;
@@ -108,6 +108,289 @@
         z-index: 88888;
         display: none;
     }
+
+
+    /* Hero da Página */
+    /* Sessão Toda da Parte Hero */
+    .hero-conteudo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+        padding: 0px 10px;
+        position: static;
+    }
+
+    .icone-bolinhas-hero {
+        display: none;
+    }
+
+    /* Imagem de Ilustração */
+    .ilustracao1 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+    /* Toda a Div das Informações - Parte a Esquerda do Hero */
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero-info h2 {
+        font-size: 38px;
+        width: 427px;
+    }
+
+    .hero-info p {
+        font-size: 18px;
+        width: 445px;
+    }
+
+    .hero-info button {
+        width: 200px;
+        height: 60px;
+        background-color: rgba(69, 143, 246, 1);
+        border-radius: 55px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+    }
+
+
+    /* Sessão Nossos Serviços */
+
+    .nossos-servicos {  /* Sessão Toda da Parte Nossos Serviços */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 10px;
+        position: relative;
+    }
+
+
+    .servicos-titulo-paragrafo {  /* Parte que Pega o h2, o hr e o p */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .icone-forma-servicos {
+        position: absolute;
+        top: 260px;
+        right: 80px;
+        z-index: -1;
+        opacity: 60%;
+    }
+
+    .icone-bolinhas-servicos{
+        display: none;
+    }
+
+
+    .servicos-cards-1 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-servicos {  /* Está Parte é das Informações Dentro dos Cards e os Cards em Si */
+        width: 345px;
+        height: 350px;
+        box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+    }
+
+    .servicos-cards-2 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 34px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .nossos-servicos button {
+        width: 200px;
+        height: 60px;
+        padding: 20px 0;
+    }
+
+
+    /* Sessão dos Prestadores de Serviços */
+
+    .prestadores-cuidados-com-saude {  /* Toda a Sessão da Parte Prestadores de Serviços */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 280px;
+        padding: 0px 10px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .prestadores-cuidados-com-saude hr {
+        margin: auto;
+        margin-top: 26px;
+        margin-bottom: 31px;
+    }
+
+    .prestadores-cuidados-com-saude p {
+        width: 395px;
+    }
+
+
+    /* Sessão do Download do App */
+
+    .download-do-nosso-app {  /* Toda a Sessão da Parte Download do App */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 370px;
+        padding: 0px 10px;
+        gap: 30px;
+        text-align: center;
+        position: relative;
+    }
+
+    .download-do-nosso-app hr {
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 31px;
+    }
+
+    .download-do-nosso-app p {
+        width: 370px;
+    }
+
+    .download-do-nosso-app button {  /* Todo o Molde do Notão de Download */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .icone-bolinhas-download {
+        display: none;
+    }
+
+
+    /* Sessão dos Comentários */
+    .sessao-comentarios {  /* Toda a Sessão da Parte Comentários */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;   
+        margin-top: 250px;
+        padding: 0px 10px;
+        position: relative;
+    }
+
+    .icone-bolinhas-comentarios-esquerda {
+        display: none;
+    }
+
+    .comentarios-container {  /* Espaço em Azul dos Comentarios */
+        width: 100%;
+        height: 450px;
+    }
+
+    .icone-bolinhas-comentarios-direita {
+        position: absolute;
+        bottom: 335px;
+        left: 290px;
+    }
+
+    .comentarios-topo {  /* Topo / Header do Container do comentario */
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .comentarios-topo h2 {
+        font-size: 34px;
+    }
+
+    .comentarios-topo hr {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .card-conteudo {  /* Div da parte debaixo do card, englobando tudo: foto, nome, local e paragrafo(comentário) */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .usuario-info img {
+        width: 70px;
+        height: 70px;
+        margin-right: 15px;
+        border: 4px solid white;
+    }
+
+    .usuario-nome-funcao {  /* Estilos do Nome e Função do Usuario */
+        line-height: 1.5;
+    }
+
+    .usuario-nome-funcao h3 {
+        width: 170px;
+        font-size: 20px;
+    }
+
+    .usuario-nome-funcao span {
+        font-size: 18px;
+    }
+
+    .comentario-texto {  /* Paragrafo do comentário da pessoa */
+        width: 100%;
+        max-width: 340px;
+        height: 120px;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+
+    /* Controles de navegação Swipper */
+
+    /* Setas de Navegação */
+
+    .sessao-comentarios .swiper-button-prev,
+    .sessao-comentarios .swiper-button-next {
+        display: none;
+    }
+
+    /* Paginação */
+
+    .sessao-comentarios .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translate(0px, -3px);
+        gap: 18px;
+    }
+
 
     
 }
