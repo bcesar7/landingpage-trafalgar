@@ -148,12 +148,12 @@
 
     .hero-info h2 {
         font-size: 38px;
-        width: 427px;
+        width: 390px;
     }
 
     .hero-info p {
         font-size: 18px;
-        width: 445px;
+        width: 385px;
     }
 
     .hero-info button {
@@ -209,7 +209,7 @@
     }
 
     .card-servicos {  /* Está Parte é das Informações Dentro dos Cards e os Cards em Si */
-        width: 345px;
+        width: 330px;
         height: 350px;
         box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
     }
@@ -244,6 +244,10 @@
         gap: 30px;
     }
 
+    .prestadores-cuidados-com-saude h2 {
+        width: 390px;
+    }
+
     .prestadores-cuidados-com-saude hr {
         margin: auto;
         margin-top: 26px;
@@ -251,7 +255,7 @@
     }
 
     .prestadores-cuidados-com-saude p {
-        width: 395px;
+        width: 392px;
     }
 
 
@@ -269,6 +273,10 @@
         position: relative;
     }
 
+    .download-do-nosso-app h2 {
+        width: 390px;
+    }
+
     .download-do-nosso-app hr {
         margin: auto;
         margin-top: 30px;
@@ -276,7 +284,7 @@
     }
 
     .download-do-nosso-app p {
-        width: 370px;
+        width: 380px;
     }
 
     .download-do-nosso-app button {  /* Todo o Molde do Notão de Download */
@@ -405,6 +413,7 @@
     }
 
     .sessao-artigos h2 {
+        width: 390px;
         text-align: center;
     }
 
@@ -418,11 +427,7 @@
     }
 
     .icone-forma-artigos {
-        position: absolute;
-        bottom: 35px;
-        left: 0px;
-        z-index: -1;
-        opacity: 60%;
+        display: none;
     }
 
     .icone-bolinhas-artigos {
@@ -491,7 +496,7 @@
     }
 
     .div-footer-trafalgar p {  /* Paragrafo da parte da trafalgar no footer, lado esquerdo */
-        width: 385px;
+        width: 378px;
         font-size: 18px;
         text-align: left;
         margin-bottom: 40px;
@@ -501,7 +506,7 @@
     .footer-opcoes {
         display: flex;
         text-align: left;
-        gap: 20px;
+        gap: 22px;
     }
 
     .company {
