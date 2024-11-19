@@ -6,24 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="src/assets/styles/style.css">
+    <link rel="stylesheet" href="src/assets/styles/responsive.css">
     <title>Trafalgar</title>
 </head>
 
 <body>
-    
+
     <header> <!-- Topo da Página -->
         <a class="logo-conteudo" href="#">
             <p>T</p>
             <h1>Trafalgar</h1>
         </a>
 
-        <nav>
+        <nav class="menu-desktop"> <!-- Menu Desktop -->
             <a href="#">Home</a>
             <a href="#">Find a doctor</a>
             <a href="#">Apps</a>
             <a href="#">Testimonials</a>
             <a href="#">About us</a>
         </nav>
+
+        <div class="menu-mobile" id="menu-mobile"> <!-- Menu Mobile -->
+
+            <div class="botao-fechar-menu" id="botao-fechar-menu"> <!-- Fechar Menu Mobile -->
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <nav>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#find a doctor">Find a doctor</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#">About us</a></li>
+            </nav>
+
+        </div>
+
+        <div class="overlayMenu" id="overlayMenu"></div> <!-- Para Deixar a Tela Escurecida ao Abrir o Menu Mobile -->
+
+        <div class="botao-abrir-menu" id="botao-abrir-menu"> <!-- Abrir Menu Mobile -->
+            <i class="bi bi-list"></i>
+        </div>
 
     </header>
 
@@ -55,11 +78,13 @@
                 for your health</p>
         </div>
 
-        <img class="icone-forma-servicos" src="src/assets/images/icons/icone-elemento1.svg" alt="Icone de uma forma meio circular para estilizar a pagina, por debaixo dos cards de opções de serviços, do lado esquerdo">
+        <img class="icone-forma-servicos" src="src/assets/images/icons/icone-elemento1.svg"
+            alt="Icone de uma forma meio circular para estilizar a pagina, por debaixo dos cards de opções de serviços, do lado esquerdo">
 
-        <img class="icone-bolinhas-servicos" src="src/assets/images/icons/icone-elemento-bolinhas-servicos.svg" alt="Icone de bolinhas ao lado direito da pagina do site, por baixo dos cards de opções de serviços">
+        <img class="icone-bolinhas-servicos" src="src/assets/images/icons/icone-elemento-bolinhas-servicos.svg"
+            alt="Icone de bolinhas ao lado direito da pagina do site, por baixo dos cards de opções de serviços">
 
-        <div class="servicos-cards-1"> 
+        <div class="servicos-cards-1">
 
             <div class="card-servicos">
                 <img style="margin-top: 54px; margin-bottom: 22.40px;" src="src/assets/images/icons/icone-lupa.svg"
@@ -93,7 +118,8 @@
             </div>
 
             <div class="card-servicos">
-                <img style="margin-top: 59px; margin-bottom: 36.25px;" src="src/assets/images/icons/icone-mala-remedios.svg"
+                <img style="margin-top: 59px; margin-bottom: 36.25px;"
+                    src="src/assets/images/icons/icone-mala-remedios.svg"
                     alt="icone de mala de emergência para opção de urgência">
                 <h3>Emergency care</h3>
                 <p>You can get 24/7 urgent care for<br>yourself or your<br>children and your
@@ -101,8 +127,8 @@
             </div>
 
             <div class="card-servicos">
-                <img style="margin-top: 52px; margin-bottom: 19.39px;" src="src/assets/images/icons/icone-ficha-informacao.svg"
-                    alt="icone de ficha de informações">
+                <img style="margin-top: 52px; margin-bottom: 19.39px;"
+                    src="src/assets/images/icons/icone-ficha-informacao.svg" alt="icone de ficha de informações">
                 <h3>Tracking</h3>
                 <p>Track and save your medical history<br>and health data </p>
             </div>
@@ -152,7 +178,8 @@
             alt="ilustração de pessoa mechendo no app da Trafalgar e ilustração no fundo de opções para se usar no app">
 
         <div class="icone-bolinhas-download">
-            <img src="src/assets/images/icons/icone-elemento-bolinhas.svg" alt="Icone de bolinhas ao lado direito da pagina do site">
+            <img src="src/assets/images/icons/icone-elemento-bolinhas.svg"
+                alt="Icone de bolinhas ao lado direito da pagina do site">
         </div>
 
     </section>
@@ -160,17 +187,21 @@
 
     <section class="sessao-comentarios"> <!-- Sessão de Comentários dos Usuarios -->
 
-        <img class="icone-bolinhas-comentarios-esquerda" src="src/assets/images/icons/icone-elemento-bolinhas-comentarios-esquerda.svg" alt="Icone de bolinhas ao lado esquerdo, do lado do card do comentario, em baixo.">
+        <img class="icone-bolinhas-comentarios-esquerda"
+            src="src/assets/images/icons/icone-elemento-bolinhas-comentarios-esquerda.svg"
+            alt="Icone de bolinhas ao lado esquerdo, do lado do card do comentario, em baixo.">
 
         <div class="comentarios-container">
 
-            <img class="icone-bolinhas-comentarios-direita" src="src/assets/images/icons/icone-elemento-bolinhas-comentarios-direita.svg" alt="Icone de bolinhas ao lado direito, por dentro do card, no topo.">
+            <img class="icone-bolinhas-comentarios-direita"
+                src="src/assets/images/icons/icone-elemento-bolinhas-comentarios-direita.svg"
+                alt="Icone de bolinhas ao lado direito, por dentro do card, no topo.">
 
             <div class="comentarios-topo">
                 <h2>What our customer are saying</h2>
                 <hr>
-            </div>    
-    
+            </div>
+
             <!-- Swipper Container -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -185,13 +216,15 @@
                                     <p><span>Founder Circle</span></p>
                                 </div>
                             </div>
-            
-                            <p class="comentario-texto">“Our dedicated patient engagement app and<br>web portal allow you to access
-                                information<br>instantaneously (no tedeous form, long calls,<br>or administrative hassle) and
+
+                            <p class="comentario-texto">“Our dedicated patient engagement app and<br>web portal allow
+                                you to access
+                                information<br>instantaneously (no tedeous form, long calls,<br>or administrative
+                                hassle) and
                                 securely”</p>
                         </div>
                     </div>
-    
+
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="card-conteudo">
@@ -202,11 +235,13 @@
                                     <p><span>Founder Circle</span></p>
                                 </div>
                             </div>
-            
-                            <p class="comentario-texto">"Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Ipsam quod vel ullam<br>repellat magnam. Maxime culpa optio ex<br>nemo omnis veritatis velit? Dolorum.”</p>
+
+                            <p class="comentario-texto">"Lorem ipsum dolor sit amet consectetur<br>adipisicing elit.
+                                Ipsam quod vel ullam<br>repellat magnam. Maxime culpa optio ex<br>nemo omnis veritatis
+                                velit? Dolorum.”</p>
                         </div>
                     </div>
-    
+
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="card-conteudo">
@@ -217,11 +252,13 @@
                                     <p><span>Cofunder</span></p>
                                 </div>
                             </div>
-            
-                            <p class="comentario-texto">“Lorem ipsum dolor sit amet consectetur elit.<br>Sequi ipsum quibusdam quod totam. Debitis<br>sapiente tempora labore nihil ratione eaque,<br>doloribus soluta consequatur at a quasi.”</p>
+
+                            <p class="comentario-texto">“Lorem ipsum dolor sit amet consectetur elit.<br>Sequi ipsum
+                                quibusdam quod totam. Debitis<br>sapiente tempora labore nihil ratione
+                                eaque,<br>doloribus soluta consequatur at a quasi.”</p>
                         </div>
                     </div>
-    
+
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
                         <div class="card-conteudo">
@@ -232,35 +269,39 @@
                                     <p><span>Member Circle</span></p>
                                 </div>
                             </div>
-            
-                            <p class="comentario-texto">"Lorem ipsum dolor sit amet, consectetur<br>elit. A deleniti magni nobis voluptatibus<br>nisi tenetur aut pariatur inventore qui<br>dolore, commodi, maiores quibusdam”</p>
+
+                            <p class="comentario-texto">"Lorem ipsum dolor sit amet, consectetur<br>elit. A deleniti
+                                magni nobis voluptatibus<br>nisi tenetur aut pariatur inventore qui<br>dolore, commodi,
+                                maiores quibusdam”</p>
                         </div>
                     </div>
                 </div>
-    
+
             </div>
 
         </div>
         <!-- Navegação do Swiper -->
         <div class="swipper-controls">
-             <div class="swiper-button-prev"></div>
-             <div class="swiper-pagination"></div>
-             <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
     </section>
-    
 
-    <section class="sessao-artigos"> <!-- Sessão Falando Sobre Artigos com 3 Cards -->          
+
+    <section class="sessao-artigos"> <!-- Sessão Falando Sobre Artigos com 3 Cards -->
         <h2>Check out our latest article</h2>
 
         <hr>
-            
+
         <div class="artigos-cards">
 
-            <img class="icone-forma-artigos" src="src/assets/images/icons/icone-elemento2.svg" alt="Icone de forma uma forma meio circular, invertida, para estilizar a pagina, por debaixo dos cards de opções de serviços, do lado direito">
-            
-            <img class="icone-bolinhas-artigos" src="src/assets/images/icons/icone-elemento-bolinhas-artigos.svg" alt="Icone de bolinhas ao lado esquerdo, por baixo do primeiro card do artigo">
+            <img class="icone-forma-artigos" src="src/assets/images/icons/icone-elemento2.svg"
+                alt="Icone de forma uma forma meio circular, invertida, para estilizar a pagina, por debaixo dos cards de opções de serviços, do lado direito">
+
+            <img class="icone-bolinhas-artigos" src="src/assets/images/icons/icone-elemento-bolinhas-artigos.svg"
+                alt="Icone de bolinhas ao lado esquerdo, por baixo do primeiro card do artigo">
 
 
             <article class="card-artigo">
@@ -312,19 +353,24 @@
 
 
     <footer> <!-- Rodapé da Página -->
-        <img class="icone-bolinhas-footer-direita" src="src/assets/images/icons/icone-elemento-bolinhas-footer-direita.svg" alt="Icone de bolinhas ao lado esquerdo, em cima do fim da pagina, do lado direito">
+        <img class="icone-bolinhas-footer-direita"
+            src="src/assets/images/icons/icone-elemento-bolinhas-footer-direita.svg"
+            alt="Icone de bolinhas ao lado esquerdo, em cima do fim da pagina, do lado direito">
 
         <div class="div-background">
 
-            <img  class="icone-bolinhas-footer-esquerda" src="src/assets/images/icons/icone-elemento-bolinhas-footer-esquerda.svg" alt="Icone de bolinhas ao lado esquerdo, no final do fim do site, do lado esquerdo">
-            
+            <img class="icone-bolinhas-footer-esquerda"
+                src="src/assets/images/icons/icone-elemento-bolinhas-footer-esquerda.svg"
+                alt="Icone de bolinhas ao lado esquerdo, no final do fim do site, do lado esquerdo">
+
             <div class="div-footer-trafalgar">
                 <a class="logo-conteudo" href="#">
                     <p>T</p>
                     <h2>Trafalgar</h2>
                 </a>
 
-                <p>Trafalgar provides progressive, and affordable<br>healthcare, accessible on mobile and online<br>for everyone
+                <p>Trafalgar provides progressive, and affordable<br>healthcare, accessible on mobile and online<br>for
+                    everyone
                 </p>
 
                 <p><span>©Trafalgar PTY LTD 2020. All rights reserved</span></p>
@@ -369,7 +415,7 @@
                 <a href="#">How if works</a>
 
             </div>
-        
+
         </div>
 
     </footer>
