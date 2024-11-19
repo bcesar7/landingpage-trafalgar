@@ -104,12 +104,18 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     max-height: 598px;
     margin: auto;
     margin-top: 47px;
+    position: relative;
+}
+
+.icone-bolinhas-hero{
+    position: absolute;
+    top: 0px;
+    right: 1218px;
 }
 
 .hero-info {  /* Toda a Div das Informações - Parte a Esquerda do Hero */
     width: 445px;
     height: 338px;
-    margin-top: 186px;
     margin-left: 190px;
     margin-right: 109px;
 }
@@ -163,6 +169,7 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     max-height: 1131px;
     margin: auto;
     margin-top: 192px;
+    position: relative;
 }
 
 
@@ -192,6 +199,21 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     font-weight: 300;
 }
 
+
+.icone-forma-servicos {
+    position: absolute;
+    top: 190px;
+    right: 590px;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.icone-bolinhas-servicos{
+    position: absolute;
+    top: 525px;
+    left: 1036px;
+    z-index: -1;
+}
 
 .servicos-cards-1 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
     display: flex;
@@ -319,6 +341,7 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     margin: auto;
     margin-top: 229px;
     gap: 71px;
+    position: relative;
 }
 
 .download-do-nosso-app h2 {
@@ -373,6 +396,12 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     height: 18px;
 }
 
+.icone-bolinhas-download {
+    position: absolute;
+    top: -225px;
+    right: -85px;
+}
+
 
 /* Sessão dos Comentários */
 
@@ -387,8 +416,13 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     max-height: 487px;
     margin: auto;   
     margin-top: 251px;
-    /* overflow: hidden; */
-    border: 2px solid white;
+    position: relative;
+}
+
+.icone-bolinhas-comentarios-esquerda {
+    position: absolute;
+    bottom: 90px;
+    right: 1040px;
 }
 
 .comentarios-container {  /* Espaço em Azul dos Comentarios */
@@ -397,6 +431,13 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
     overflow: hidden;
+    position: relative;
+}
+
+.icone-bolinhas-comentarios-direita {
+    position: absolute;
+    bottom: 320px;
+    left: 1035px;
 }
 
 .comentarios-topo {  /* Topo / Header do Container do comentario */
@@ -569,13 +610,27 @@ nav a:not(:hover) {  /* Efeito ao Tirar o Mouse de Cima do Link */
     border-radius: 5px;
 }
 
-
 .artigos-cards {  /* Div que engloba os 3 cards */
     display: flex;
     gap: 35px;
     margin-bottom: 69px;
+    position: relative;
 }
 
+.icone-forma-artigos {
+    position: absolute;
+    bottom: 45px;
+    left: 756px;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.icone-bolinhas-artigos {
+    position: absolute;
+    bottom: 440px;
+    right: 1036px;
+    z-index: -1;
+}
 
 .card-artigo {  /* Div dos cards (engloba todo o molde do card) */
     width: 100%;
@@ -648,6 +703,14 @@ footer {
     margin: auto;
     margin-top: 129px;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    position: relative;
+}
+
+.icone-bolinhas-footer-direita {
+    position: absolute;
+    bottom: 390px;
+    left: 1140px;
+    z-index: -1;
 }
 
 .div-background {  /* Div que esta por dentro do footer. Pega toda a parte azul do footer e o que esta nela */
@@ -659,6 +722,14 @@ footer {
     height: 100%;
     max-height: 214px;
     margin: auto;
+    position: relative;
+}
+
+.icone-bolinhas-footer-esquerda {
+    position: absolute;
+    top: 225px;
+    right: 1155px;
+    
 }
 
 .div-footer-trafalgar {
