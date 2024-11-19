@@ -284,6 +284,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        gap: 12px;
     }
 
     .icone-bolinhas-download {
@@ -314,7 +315,7 @@
 
     .icone-bolinhas-comentarios-direita {
         position: absolute;
-        bottom: 335px;
+        bottom: 365px;
         left: 290px;
     }
 
@@ -392,5 +393,158 @@
     }
 
 
-    
+    /* Sessão dos Artigos */
+    .sessao-artigos {  /* Sessão Falando Sobre Artigos com 3 Cards */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 660px;
+        padding: 0px 10px;
+    }
+
+    .sessao-artigos h2 {
+        text-align: center;
+    }
+
+    .artigos-cards-container {  /* Div que engloba os 3 cards */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+        position: relative;
+    }
+
+    .icone-forma-artigos {
+        position: absolute;
+        bottom: 35px;
+        left: 0px;
+        z-index: -1;
+        opacity: 60%;
+    }
+
+    .icone-bolinhas-artigos {
+        display: none;
+    }
+
+    .card-artigo {  /* Div dos cards (engloba todo o molde do card) */
+        box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.8);
+    }
+
+    .card-artigo a {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        gap: 12px;
+    }
+
+    .card-artigo a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sessao-artigos button {  /* Botão da sessão */
+        width: 200px;
+        height: 60px;
+        padding: 20px 0;
+    }
+
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 520px;
+        margin: auto;
+        margin-top: 640px;
+        padding: 0px 10px;
+        position: relative;
+    }
+
+    .icone-bolinhas-footer-direita {
+        position: absolute;
+        bottom: 475px;
+        left: 250px;
+        z-index: -1;
+    }
+
+    .div-background {  /* Div que esta por dentro do footer. Pega toda a parte azul do footer e o que esta nela */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+    }
+
+    .icone-bolinhas-footer-esquerda {
+        display: none;
+    }
+
+    .div-footer-trafalgar {
+        margin-top: -80px;
+        margin-right: 0px;
+    }
+
+    .div-footer-trafalgar p {  /* Paragrafo da parte da trafalgar no footer, lado esquerdo */
+        width: 385px;
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+
+    .footer-opcoes {
+        display: flex;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .company {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .company h3 {  /* Titulo da parte Company no Footer */
+        margin-bottom: 20px;
+    }
+
+
+    .region {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .region h3 {  /* Titulo da parte Region no Footer */
+        margin-bottom: 20px;
+    }
+
+
+    .help {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .help h3 {  /* Titulo da parte Help no Footer */
+        margin-bottom: 20px;
+    }
+
+    .div-footer-trafalgar span {  /* Parte dos direitos reservados, logo abaixo do paragrafo da trafalgar */
+        width: 330px;
+        font-size: 16px;
+        margin: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 320px;
+        left: 50%;
+    }
 }

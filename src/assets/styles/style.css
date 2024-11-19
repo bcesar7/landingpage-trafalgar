@@ -629,7 +629,7 @@ header {
     border-radius: 5px;
 }
 
-.artigos-cards {  /* Div que engloba os 3 cards */
+.artigos-cards-container {  /* Div que engloba os 3 cards */
     display: flex;
     gap: 35px;
     margin-bottom: 69px;
@@ -783,6 +783,11 @@ footer {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255, 255, 255, 1);
+}
+
+
+.footer-opcoes {
+    display: flex;
 }
 
 
