@@ -1,5 +1,5 @@
 // Slide de Comentários
-var swiper = new Swiper('.swiper-container', {
+var swiperComentarios = new Swiper('.swiper-container-comentarios', {
     speed: 600,
     simulateTouch: true, // Habilita o controle por toque e arrasto com o mouse
     grabCursor: true,    // Altera o cursor para uma "mão" quando sobre o slide
@@ -7,11 +7,11 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30, // Espaço entre os slides
     loop: true, // Loop contínuo dos slides
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-comentarios',
+        prevEl: '.swiper-button-prev-comentarios',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-comentarios',
         clickable: true,
     },
 });

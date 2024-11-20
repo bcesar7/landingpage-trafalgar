@@ -480,19 +480,19 @@ header {
 
 
 /* Estilos do Swipper */
-
-.swiper-container {
+.swiper-container-comentarios {
     width: 100%;
     max-width: 1120px;
     height: auto;
 }
 
-.swiper-slide {
+.comentario-slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* ----- || ----- */
 
 .card-conteudo {  /* Div da parte debaixo do card, englobando tudo: foto, nome, local e paragrafo(comentário) */
     display: flex;
@@ -561,25 +561,25 @@ header {
 
 /* Setas de Navegação */
 
-.sessao-comentarios .swiper-button-prev,
-.sessao-comentarios .swiper-button-next {
+.sessao-comentarios .swiper-button-prev-comentarios,
+.sessao-comentarios .swiper-button-next-comentarios {
     width: 28px;
     height: 18px;
     position: static;
     background: none;
 }
 
-.sessao-comentarios .swiper-button-prev {
+.sessao-comentarios .swiper-button-prev-comentarios {
     content: url('../images/icons/seta-para-esquerda.svg');
 }
 
-.sessao-comentarios .swiper-button-next {
+.sessao-comentarios .swiper-button-next-comentarios {
     content: url('../images/icons/seta-para-direita.svg');
 }
 
 /* Paginação */
 
-.sessao-comentarios .swiper-pagination {
+.sessao-comentarios .swiper-pagination-comentarios {
     display: flex;
     justify-content: center;
     align-items: center;
