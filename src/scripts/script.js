@@ -1,6 +1,7 @@
 // Slide da Parte de Serviços (Primeiros 3 Cards) - Para o Responsivo Somente
 var swiperServicos1 = new Swiper('.servicos-cards-1', {
     speed: 600,
+    spaceBetween: 30,
     simulateTouch: true, // Habilita o controle por toque e arrasto com o mouse
     grabCursor: false,    // Altera o cursor para uma "mão" quando sobre o slide
     loop: true, // Loop contínuo dos slides
@@ -18,7 +19,6 @@ var swiperServicos1 = new Swiper('.servicos-cards-1', {
         // Configurações para telas menores ou iguais a 480px
         480: {
             slidesPerView: 1,
-            spaceBetween: 0,
             enabled: true, // Habilita o swiper
         },
     },
@@ -28,6 +28,7 @@ var swiperServicos1 = new Swiper('.servicos-cards-1', {
 // Slide da Parte de Serviços (Segundos 3 Cards) - Para o Responsivo Somente
 var swiperServicos2 = new Swiper('.servicos-cards-2', {
     speed: 600,
+    spaceBetween: 30,
     simulateTouch: true, // Habilita o controle por toque e arrasto com o mouse
     grabCursor: false,    // Altera o cursor para uma "mão" quando sobre o slide
     loop: true, // Loop contínuo dos slides
@@ -45,7 +46,6 @@ var swiperServicos2 = new Swiper('.servicos-cards-2', {
         // Configurações para telas menores ou iguais a 480px
         480: {
             slidesPerView: 1,
-            spaceBetween: 0,
             enabled: true, // Habilita o swiper
         },
     },

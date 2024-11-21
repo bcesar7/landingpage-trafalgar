@@ -226,7 +226,6 @@
     .servicos-titulo-paragrafo p {
         width: 370px;
         margin: auto;
-        word-break: break-all;
     }
 
     .quebra-linha-servicos {
@@ -258,9 +257,8 @@
 
     /* Co-classe do Swiper-Slide */
     .card-servicos {  /* Está Parte é das Informações Dentro dos Cards e os Cards em Si */
-        width: 330px;
+        width: 350px;
         box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
-        margin: 0 11.5px; 
     }
 
     .servicos-cards-2 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
