@@ -406,6 +406,10 @@ header {
     margin-bottom: 40px;
 }
 
+.quebra-linha-download {
+    display: block;
+}
+
 .download-do-nosso-app img {
     width: 100%;
     max-width: 665px;
@@ -573,6 +577,10 @@ header {
     line-height: 2;
 }
 
+.quebra-linha-comentarios {
+    display: block;
+}
+
 
 /* Controles de navegação Swipper */
 
@@ -706,6 +714,10 @@ header {
     margin-left: 33px;
     margin-bottom: 25px;
     line-height: 2;
+}
+
+.quebra-linha-artigo {
+    display: block;   
 }
 
 .card-artigo a {
