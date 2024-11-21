@@ -12,7 +12,16 @@
 
     /* Topo do Site */
     header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 70px;
         gap: 130px;
+    }
+
+    .logo-conteudo {  /* Toda a Parte da Ancora do que Engloba o Logo */
+        padding-top: 20px;
     }
 
     .menu-desktop {
@@ -31,6 +40,7 @@
 
     .botao-abrir-menu {
         display: block;
+        padding-top: 20px;
     }
 
     /* Botão Abrir Menu Mobile */
@@ -117,8 +127,10 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        height: 100%;
+        max-height: 830px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         padding: 0px 10px;
         position: static;
     }
@@ -147,13 +159,26 @@
     }
 
     .hero-info h2 {
+        width: 350px;
         font-size: 38px;
-        width: 390px;
+        margin: auto;
+        margin-bottom: 25px;
     }
 
     .hero-info p {
+        width: 370px;
         font-size: 18px;
-        width: 385px;
+        margin: auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .quebra-linha-hero {
+        display: none;
+    }
+
+    .quebra-linha-hero-mobile {
+        display: block;
     }
 
     .hero-info button {
@@ -174,8 +199,12 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 100%;
+        max-height: 1250px;
+        margin-top: 100px;
         padding: 0px 10px;
         position: relative;
+        overflow: hidden;
     }
 
 
@@ -187,6 +216,21 @@
         text-align: center;
     }
 
+    .servicos-titulo-paragrafo h2 {
+        width: 350px;
+        margin: auto;
+        margin-bottom: 26px;
+    }
+    
+    .servicos-titulo-paragrafo p {
+        width: 370px;
+        margin: auto;
+        word-break: break-all;
+    }
+
+    .quebra-linha-servicos {
+        display: none;
+    }
 
     .icone-forma-servicos {
         position: absolute;
@@ -201,27 +245,64 @@
     }
 
 
+    /* Co-classe do Swiper-Container */
     .servicos-cards-1 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
     }
 
+    /* Co-classe do Swiper-Slide */
     .card-servicos {  /* Está Parte é das Informações Dentro dos Cards e os Cards em Si */
         width: 330px;
-        height: 350px;
         box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+        margin: 0 11.5px; 
     }
 
     .servicos-cards-2 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 34px;
+        margin: auto;
         margin-top: 40px;
         margin-bottom: 50px;
+        position: relative;
     }
+
+
+    /* Navegação dos Slides dos Cards */
+    .nossos-servicos .swiper-button-prev-servicos1 {
+        position: absolute;
+        left: 1px;
+    }
+    
+    .nossos-servicos .swiper-button-next-servicos1 {
+        position: absolute;
+        right: 1px;
+    }
+
+
+    .nossos-servicos .swiper-button-prev-servicos2 {
+        position: absolute;
+        left: 1px;
+    }
+    
+    .nossos-servicos .swiper-button-next-servicos2 {
+        position: absolute;
+        right: 1px;
+    }
+
+    /* Alterando o tamanho dos icones */
+    .swiper-button-prev-servicos1:after,
+    .swiper-button-next-servicos1:after,
+    .swiper-button-prev-servicos2:after,
+    .swiper-button-next-servicos2:after {
+        font-size: 30px;
+    }
+
 
     .nossos-servicos button {
         width: 200px;
@@ -235,17 +316,20 @@
     .prestadores-cuidados-com-saude {  /* Toda a Sessão da Parte Prestadores de Serviços */
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-height: 830px;
         margin: auto;
-        margin-top: 280px;
+        margin-top: 100px;
         padding: 0px 10px;
         text-align: center;
         gap: 30px;
     }
 
     .prestadores-cuidados-com-saude h2 {
-        width: 390px;
+        width: 350px;
+        margin: auto;
     }
 
     .prestadores-cuidados-com-saude hr {
@@ -255,7 +339,14 @@
     }
 
     .prestadores-cuidados-com-saude p {
-        width: 392px;
+        width: 370px;
+        margin: auto;
+        margin-bottom: 37px;
+        word-break: break-all;
+    }
+
+    .quebra-linha-prestadores {
+        display: none;
     }
 
 
@@ -266,7 +357,9 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        margin-top: 370px;
+        height: 100%;
+        max-height: 810px;
+        margin-top: 100px;
         padding: 0px 10px;
         gap: 30px;
         text-align: center;
@@ -274,7 +367,8 @@
     }
 
     .download-do-nosso-app h2 {
-        width: 390px;
+        width: 350px;
+        margin: auto;
     }
 
     .download-do-nosso-app hr {
@@ -284,7 +378,9 @@
     }
 
     .download-do-nosso-app p {
-        width: 380px;
+        width: 370px;
+        margin: auto;
+        margin-bottom: 40px;
     }
 
     .download-do-nosso-app button {  /* Todo o Molde do Notão de Download */
@@ -307,7 +403,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;   
-        margin-top: 250px;
+        margin-top: 100px;
         padding: 0px 10px;
         position: relative;
     }
@@ -333,7 +429,9 @@
     }
 
     .comentarios-topo h2 {
+        width: 350px;
         font-size: 34px;
+        margin: auto;
     }
 
     .comentarios-topo hr {
@@ -375,6 +473,7 @@
         width: 100%;
         max-width: 340px;
         height: 120px;
+        margin: auto;
         font-size: 16px;
         line-height: 2;
     }
@@ -407,13 +506,16 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 100%;
+        max-height: 2000px;
         margin: auto;
-        margin-top: 660px;
+        margin-top: 100px;
         padding: 0px 10px;
     }
 
     .sessao-artigos h2 {
-        width: 390px;
+        width: 350px;
+        margin: auto;
         text-align: center;
     }
 
@@ -435,6 +537,7 @@
     }
 
     .card-artigo {  /* Div dos cards (engloba todo o molde do card) */
+        height: 530px;
         box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.8);
     }
 
@@ -463,16 +566,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 520px;
+        height: 550px;
         margin: auto;
-        margin-top: 640px;
+        margin-top: 100px;
         padding: 0px 10px;
         position: relative;
     }
 
     .icone-bolinhas-footer-direita {
+        width: 120px;
         position: absolute;
-        bottom: 475px;
+        bottom: 508px;
         left: 250px;
         z-index: -1;
     }
@@ -482,6 +586,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        max-width: 370px;
+        height: 100%;
+        max-height: 520px;
         margin: auto;
         position: relative;
     }
@@ -491,20 +599,32 @@
     }
 
     .div-footer-trafalgar {
-        margin-top: -80px;
-        margin-right: 0px;
+        height: 190px;
+        margin: auto;
+        margin-top: -70px;
+        margin-bottom: 30px;
     }
 
     .div-footer-trafalgar p {  /* Paragrafo da parte da trafalgar no footer, lado esquerdo */
-        width: 378px;
+        width: 365px;
         font-size: 18px;
         text-align: left;
+        margin: auto;
         margin-bottom: 40px;
+    }
+
+    .quebra-linha-footer {
+        display: none;
+    }
+
+    .quebra-linha-footer-mobile{
+        display: block;
     }
 
 
     .footer-opcoes {
         display: flex;
+        align-items: start;
         text-align: left;
         gap: 22px;
     }
@@ -549,7 +669,7 @@
         margin: auto;
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 320px;
+        bottom: -15px;
         left: 50%;
     }
 }

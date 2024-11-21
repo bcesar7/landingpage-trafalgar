@@ -1,3 +1,57 @@
+// Slide da Parte de Serviços (Primeiros 3 Cards) - Para o Responsivo Somente
+var swiperServicos1 = new Swiper('.servicos-cards-1', {
+    speed: 600,
+    simulateTouch: true, // Habilita o controle por toque e arrasto com o mouse
+    grabCursor: false,    // Altera o cursor para uma "mão" quando sobre o slide
+    loop: true, // Loop contínuo dos slides
+    navigation: {
+        nextEl: '.swiper-button-next-servicos1',
+        prevEl: '.swiper-button-prev-servicos1',
+    },
+    breakpoints: {
+        // Configurações para telas maiores que 480px
+        481: {
+            slidesPerView: 3, // Ou o comportamento desejado para telas maiores
+            spaceBetween: 34, // Espaço entre os slides
+            enabled: false, // Desabilita o swiper
+        },
+        // Configurações para telas menores ou iguais a 480px
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            enabled: true, // Habilita o swiper
+        },
+    },
+});
+
+
+// Slide da Parte de Serviços (Segundos 3 Cards) - Para o Responsivo Somente
+var swiperServicos2 = new Swiper('.servicos-cards-2', {
+    speed: 600,
+    simulateTouch: true, // Habilita o controle por toque e arrasto com o mouse
+    grabCursor: false,    // Altera o cursor para uma "mão" quando sobre o slide
+    loop: true, // Loop contínuo dos slides
+    navigation: {
+        nextEl: '.swiper-button-next-servicos2',
+        prevEl: '.swiper-button-prev-servicos2',
+    },
+    breakpoints: {
+        // Configurações para telas maiores que 480px
+        481: {
+            slidesPerView: 3, // Ou o comportamento desejado para telas maiores
+            spaceBetween: 34, // Espaço entre os slides
+            enabled: false, // Desabilita o swiper
+        },
+        // Configurações para telas menores ou iguais a 480px
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            enabled: true, // Habilita o swiper
+        },
+    },
+});
+
+
 // Slide de Comentários
 var swiperComentarios = new Swiper('.swiper-container-comentarios', {
     speed: 600,

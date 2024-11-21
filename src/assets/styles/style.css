@@ -33,17 +33,18 @@ button {
 
 /* Topo da Página */
 header {
-    width: 100%;
-    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 130px;
     margin: auto;
     gap: 512px;
 }
 
 .logo-conteudo {  /* Toda a Parte da Ancora do que Engloba o Logo */
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 160px;
@@ -68,6 +69,8 @@ header {
 
 .menu-desktop {  /* Menu de Navegação da Página */
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 545px;
     height: 23px;
@@ -150,6 +153,14 @@ header {
     margin-bottom: 45px;
 }
 
+.quebra-linha-hero {
+    display: block;
+}
+
+.quebra-linha-hero-mobile {
+    display: none;
+}
+
 .hero-info button {
     width: 200px;
     height: 60px;
@@ -214,7 +225,11 @@ header {
     line-height: 1.7;
 }
 
+.quebra-linha-servicos {
+    display: block;
+}
 
+/* Icones */
 .icone-forma-servicos {
     position: absolute;
     top: 190px;
@@ -230,15 +245,19 @@ header {
     z-index: -1;
 }
 
+/* Co-classe do Swiper-Container */
 .servicos-cards-1 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 34px;
+    width: 100%;
+    margin: 0 auto;
     margin-top: 80px;
+    /* gap: 34px; */ /* Deixei comentado por que tirei o gap do CSS e deixei somente o do Swipper Js */ 
 }
 
-.card-servicos {  /* Está Parte é das Informações Dentro dos Cards e os Cards em Si */
+/* Co-classe do Swiper-Slide */
+.card-servicos {  /* Está Parte dos Cards em Si */
     width: 350px;
     height: 354px;
     background-color: rgba(255, 255, 255, 1);
@@ -265,14 +284,17 @@ header {
     line-height: 2;
 }
 
+/* Co-classe do Swiper-Slide */
 .servicos-cards-2 {  /* Parte dos Cards - (servicos-cards-1 pega os 3 primeiros de cima) */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 34px;
+    width: 100%;
+    /* gap: 34px; */
     margin-top: 37px;
     margin-bottom: 69px;
 }
+
 
 .nossos-servicos button {
     width: 200px;
@@ -328,6 +350,10 @@ header {
     font-weight: 300;
     line-height: 2;
     margin-bottom: 37px;
+}
+
+.quebra-linha-prestadores {
+    display: block;
 }
 
 .prestadores-cuidados-com-saude button {
@@ -728,7 +754,8 @@ footer {
 .icone-bolinhas-footer-direita {
     position: absolute;
     bottom: 390px;
-    left: 1140px;
+    left: 80%;
+    right: 20%;
     z-index: -1;
 }
 
@@ -778,6 +805,15 @@ footer {
     line-height: 1.7;
     margin-bottom: 31px;
 }
+
+.quebra-linha-footer {
+    display: block;
+}
+
+.quebra-linha-footer-mobile{
+    display: none;
+}
+
 
 .div-footer-trafalgar span {  /* Parte dos direitos reservados, logo abaixo do paragrafo da trafalgar */
     font-size: 16px;
